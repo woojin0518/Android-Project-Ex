@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    android:background="#8ACDC7"
+    android:layout_margin="10sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#9DC0C5"
+        android:layout_margin="10sp"
+        android:padding="10sp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:onClick="mClick"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1페이지"
+            android:textSize="20sp"
+            android:layout_margin="10sp"
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:onClick="mClick"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2페이지"
+            android:textSize="20sp"
+            android:layout_margin="10sp"
+            android:background="#ffffff"/>
+        <Button
+            android:id="@+id/btn3"
+            android:onClick="mClick"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3페이지"
+            android:textSize="20sp"
+            android:layout_margin="10sp"
+            android:background="#ffffff"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9DC0C5"
+        android:layout_margin="10sp"
+        android:padding="10sp">
+
+        <LinearLayout
+            android:id="@+id/page1"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#457C95"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1페이지 입니다."
+                android:textSize="20sp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:layout_margin="10sp"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이름을 입력하세요!"
+                android:textSize="20sp"
+                android:background="#ffffff"
+                android:layout_margin="10sp"/>
+
+                <Button
+                    android:id="@+id/btnPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="출력"
+                    android:textSize="20sp"
+                    android:background="#ffffff"
+                    android:layout_margin="10sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/page2"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1F5E7A"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2페이지 입니다."
+                android:textSize="20sp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:layout_margin="10sp"/>
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="200sp"
+                android:layout_height="180sp"
+                android:src="@drawable/car1"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffff">
+            <Button
+                android:id="@+id/btnImg1"
+                android:onClick="mImage"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="첫번째 그림"/>
+            <Button
+                android:id="@+id/btnImg2"
+                android:onClick="mImage"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="두번째 그림"/>
+            <Button
+                android:id="@+id/btnImg3"
+                android:onClick="mImage"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="세번째 그림"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/page3"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#03344A"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1~100까지의 합"
+                android:textSize="20sp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:layout_margin="10sp"/>
+            <Button
+                android:id="@+id/btnSum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="합계 결과"/>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

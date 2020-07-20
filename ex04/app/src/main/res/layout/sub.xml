@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A3CAC6"
+    android:padding="10sp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="78dp"
+        android:src="@drawable/audi" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_below="@id/image"
+        android:layout_marginTop="10sp"
+        android:background="#ffffff"
+        android:text="삭제" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="15sp"
+        android:text="홍길동"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@id/image"/>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="010-6754-1344"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_below="@id/name"
+        android:layout_alignLeft="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게으름 피울 수 있을 만큼 똑똑하지 못한 것을 포부가 높기 때문이라고 변명할 수 없다."/>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn1"
+        android:onClick="mClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1A3A3"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        android:text="첫번째 차"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/btn2"
+        android:onClick="mClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1A3A3"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        android:text="두번째 차"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/btn3"
+        android:onClick="mClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1A3A3"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        android:text="카운트 연속 출력"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/btn4"
+        android:onClick="mClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1A3A3"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        android:text="세번째 차"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>
